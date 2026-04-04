@@ -12,11 +12,25 @@ This repository contains a modular PyTorch implementation of a Denoising Diffusi
 
 ### Generated from Initial Model (Overfitted)
 These images show early results during training:
-*(See the `images/ddpm_overfit` directory for more examples)*
+
+<p align="center">
+  <img src="images/ddpm_overfit/Picture%201.png" width="200" />
+  <img src="images/ddpm_overfit/Picture%202.png" width="200" />
+  <img src="images/ddpm_overfit/Picture%203.png" width="200" />
+</p>
+<p align="center"><em>(See the `images/ddpm_overfit` directory for more examples)</em></p>
 
 ### Generated from Final Model (MNIST)
 These images show the final generated digits:
-*(See the `images/mnist` directory for more examples)*
+
+<p align="center">
+  <img src="images/mnist/download%20(3).png" width="150" />
+  <img src="images/mnist/download%20(4).png" width="150" />
+  <img src="images/mnist/download%20(5).png" width="150" />
+  <img src="images/mnist/download%20(7).png" width="150" />
+  <img src="images/mnist/download%20(8).png" width="150" />
+</p>
+<p align="center"><em>(See the `images/mnist` directory for more examples)</em></p>
 
 ## Installation
 
@@ -39,6 +53,12 @@ To train the model from scratch, simply run:
 python main.py --mode train --epochs 150
 ```
 This will download the MNIST dataset to `./data`, train the U-Net, and save the best checkpoint as `best_mnist_ddpm.pt`.
+
+### Testing the Model
+To test the model by generating a grid of all digits (0-9) and saving the result as `test_results.png`, run:
+```bash
+python test_model.py
+```
 
 ### Generating Images
 To generate a digit using a trained model, run:
