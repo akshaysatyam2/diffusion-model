@@ -60,6 +60,10 @@ To test the model by generating a grid of all digits (0-9) and saving the result
 python test_model.py
 ```
 
+<p align="center">
+  <img src="test_results.png" width="800" alt="Generated digits grid (0-9)" />
+</p>
+
 ### Generating Images
 To generate a digit using a trained model, run:
 ```bash
