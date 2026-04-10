@@ -29,6 +29,22 @@ Building this without training wheels meant confronting the exact mathematical w
 
 ## Generated Images
 
+### V1 Model (1-Shot MSE Blur)
+These images show the early model attempting to predict the clean image in a single step:
+
+<p align="center">
+  <img src="images/V1-overfitted/download.png" width="200" />
+  <img src="images/V1-overfitted/download%20(1).png" width="200" />
+</p>
+
+### V2 Model (Rainbow Static Bug)
+These images demonstrate the "rainbow static" output caused by the normalization mismatch:
+
+<p align="center">
+  <img src="images/V2-ddpm-overfit/download.png" width="200" />
+  <img src="images/V2-ddpm-overfit/download%20(2).png" width="200" />
+</p>
+
 ### Generated from Initial Model (Overfitted)
 These images show early results during training:
 
