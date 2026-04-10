@@ -1,5 +1,7 @@
 # MNIST Diffusion Model (DDPM)
 
+**📖 Read the full article on Medium:** [My Journey Building a Diffusion Model From Scratch](https://medium.com/@akshaysatyam2/my-journey-building-a-diffusion-model-from-scratch-21dfe2fd98e5)
+
 While modern APIs make it incredibly easy to generate images with a single line of code, I wanted to deeply understand the fundamental mathematics powering state-of-the-art generative models. This repository contains a Denoising Diffusion Probabilistic Model (DDPM) that I built, mathematically formulated, and trained entirely from scratch using PyTorch.
 
 There are no pre-trained weights or HuggingFace pipelines here—just pure tensor mathematics, a custom time-conditioned U-Net, and a 1000-step Markov chain. The model generates 32x32 images of hand-drawn digits conditioned on a class label (0-9).
